@@ -1,5 +1,5 @@
 # [Real-time Facial Expression Recognition ``In The Wild'' by Disentangling 3D Expression from Identity](https://arxiv.org/abs/2005.05509):
-[![Youtube Video](https://img.shields.io/badge/HD%20Video-Results-lightgrey?logo=youtube)](https://youtu.be/Gnkw6TY5ZuU)
+[![Youtube Video](https://img.shields.io/badge/HD%20Video-Results-lightgrey?logo=youtube)](https://youtu.be/Gnkw6TY5ZuU	)
 [![arXiv Prepring](https://img.shields.io/badge/arXiv-Preprint-lightgrey?logo=arxiv)](https://arxiv.org/abs/2005.05509)
 
 This is the official repository of our FG 2020 paper FER in-the-wild.
@@ -27,7 +27,7 @@ robustly estimating parameters of 3D expression variation and accurately recogni
 
 ### Proposed Framework
 
-![Framework Image](images/pipeline.jpg "framework image")
+![Framework Image](images/pipeline.png "framework image")
 
 The figure above demonstrates an overview of the proposed framework. Motivated by the progress in the 3D facial reconstruction from images and the rich dynamic information accompanying videos of facial performances, we collected a large-scale dataset of facial videos from the internet and recovered the per-frame 3D geometry thereof with the aid of 3D Morphable Models (3DMMs) of identity and expression. The annotated dataset was used to train the proposed DeepExp3D network, in a supervised manner for regressing the expression coefficients vector e_f from a single input image I_f. As a final step, a classifier was added to the output of the DeepExp3D to predict the emotion of each estimated facial expression, and was trained and tested on standard benchmarks for FER, please see the paper for more details. 
 
