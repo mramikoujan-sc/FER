@@ -1,4 +1,4 @@
-# [Real-time Facial Expression Recognition ``In The Wild'' by Disentangling 3D Expression from Identity](https://arxiv.org/abs/2005.05509):
+# [Real-time Facial Expression Recognition ``In The Wild'' by Disentangling 3D Expression from Identity](https://www.computer.org/csdl/proceedings-article/fg/2020/307900a539/1kecIGkG01i):
 [![Youtube Video](https://img.shields.io/badge/HD%20Video-Results-lightgrey?logo=youtube)](https://youtu.be/Gnkw6TY5ZuU	)
 [![arXiv Prepring](https://img.shields.io/badge/arXiv-Preprint-lightgrey?logo=arxiv)](https://arxiv.org/abs/2005.05509)
 
@@ -16,7 +16,7 @@ This is the official repository of our FG 2020 paper FER in-the-wild.
 
 
 [[Preprint]](https://arxiv.org/pdf/2005.05509.pdf)
-__[FG 2020]__
+[[FG 2020]](https://www.computer.org/csdl/pds/api/csdl/proceedings/download-article/1kecIGkG01i/pdf)
 
 ### Abstract 
 
@@ -31,14 +31,27 @@ robustly estimating parameters of 3D expression variation and accurately recogni
 
 The figure above demonstrates an overview of the proposed framework. Motivated by the progress in the 3D facial reconstruction from images and the rich dynamic information accompanying videos of facial performances, we collected a large-scale dataset of facial videos from the internet and recovered the per-frame 3D geometry thereof with the aid of 3D Morphable Models (3DMMs) of identity and expression. The annotated dataset was used to train the proposed DeepExp3D network, in a supervised manner for regressing the expression coefficients vector e_f from a single input image I_f. As a final step, a classifier was added to the output of the DeepExp3D to predict the emotion of each estimated facial expression, and was trained and tested on standard benchmarks for FER, please see the paper for more details. 
 
+### Results
+
+![Results Image](images/results.png "results image")
+
 
 ### Citation
 If you find our work useful, please cite it as follows:
 ```
-@article{koujan2020real,
-  title={Real-time Facial Expression Recognition" In The Wild''by Disentangling 3D Expression from Identity},
-  author={Koujan, Mohammad Rami and Alharbawee, Luma and Giannakakis, Giorgos and Pugeault, Nicolas and Roussos, Anastasios},
-  journal={arXiv preprint arXiv:2005.05509},
-  year={2020}
+@INPROCEEDINGS {,
+author = {M. Koujan and L. Alharbawee and G. Giannakakis and N. Pugeault and A. Roussos},
+booktitle = {2020 15th IEEE International Conference on Automatic Face and Gesture Recognition (FG 2020) (FG)},
+title = {Real-Time Facial Expression Recognition "In The Wild" by Disentangling 3D Expression from Identity},
+year = {2020},
+volume = {},
+issn = {},
+pages = {539-546},
+keywords = {},
+doi = {10.1109/FG47880.2020.00084},
+url = {https://doi.ieeecomputersociety.org/10.1109/FG47880.2020.00084},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month = {may}
 }
 ```
